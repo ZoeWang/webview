@@ -4,10 +4,249 @@
     <title>测试小程序富文本</title>
 </head>
 <body>
-    <header>header</header>
-    <div>
-        test
+    <header class="Header black">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="header-logo" href="/">
+                        <img class="octicon" src="/assets/pages/common/images/youked_logo_white2.png" alt="优课工坊">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">规范中心<span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="https://press.youked.com/guide/course/windows">Window</a></li>
+                                <li><a href="https://press.youked.com/guide/course/mac">Mac</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://shimo.im/docs/xymeEmVOejY7kPkl">帮助中心</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">朱仔华宇 <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li><a  href="https://press.youked.com/course/create">创建视频课程</a></li>
+                                <li class="divider"></li>
+                                <li><a  href="https://press.youked.com/setting/profile">设置</a></li>
+                                <li>
+                                    <a href="https://www.youked.com/logout"
+                                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                        登出
+                                    </a>
+
+                                    <form id="logout-form" action="https://www.youked.com/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="ekdaUGVAfwa2OI88GdGvGiV2WYLo66poOXh5WXf1">
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mainer">
+        <div class="Subhead w1000">
+            <h2 class="Subhead-heading">规范中心 Mac</h2>
+        </div>
+        <div class="guide-setting w1000">
+            <div class="setting-side">
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">资料包下载</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="download-list">
+                            <li><a href="https://q2.cdn.youked.com/guide/guide-course-mac-ppt.zip" target="_blank">1. Mac 课件模板 V1.0 (25 MB)</a></li>
+                            <li><a href="https://q2.cdn.youked.com/guide/guide-course-mac-tools.zip" target="_blank">2. Mac 录屏工具包 (68 MB)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-infor">
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">1. 话筒与录音（便携硬件）</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-01.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">2. Mac 调整屏幕分辨率</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-02.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">3. Mac 整理与清理录制环境</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-03.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">4. Mac 系统音频设置</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-04.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">5. Mac 系统音频设置（便携设备）</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-05.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">6. 音质、波形与音量校准</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-06.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">7. Mac 调整麦克风音量</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-07.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">8. Mac ScreenFlow 安装</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-08.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">9. Mac 录屏软件的使用</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-09.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">10. Mac 字体的安装</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-10.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_card">
+                    <div class="card-header">
+                        <div class="card-header-title">11. 讲解技巧</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <video class="video-js vjs-big-play-centered" controls  width="658" height="370" 
+                            poster="/assets/pages/guide/images/press_video_poster.jpg" data-setup="{}">
+                              <source src="https://q2.cdn.youked.com/w2/guide/guide-course-mac-11.mp4" type='video/mp4'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <footer>footer</footer>
 </body>
 </html>
