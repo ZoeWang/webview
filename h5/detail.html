@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>详情页模板</title>
+	<link rel="stylesheet" href="./css/detail.css">
+	<script
+	  src="http://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="./js/layer/layer.js"></script>
+</head>
+<body>
+	<!-- <section class="loading"></section> -->
+	<div class="rich-text">
+		富文本<br/>
+		富文本<br/>
+		富文本<br/>
+		富文本<br/>
+		富文本<br/>
+		富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>富文本<br/>
+	</div>
+	<nav class="operate clearfix">
+		<a href="" class="home active">
+			<i class="icon-home"></i>
+			首页
+		</a>
+		<a href="" class="customer">
+			<i class="icon-cs"></i>
+			客服
+		</a>
+		<a href="javascript:;" class="shopcart" id="addCart">
+			加入购物车
+		</a>
+		<a href="javascript:;" class="buy" id="buyNow">
+			立即购买
+		</a>
+	</nav>
+	
+	<div class="select-mask hide" id="selMask"></div>
+	<div class="goods-detail hide" id="goodsCard">
+        <div class="goods-info">
+            <div class="info-image">图片</div>
+            <div class="info-text">
+                <div class="info-title">
+                    [新年好礼]“Noise” 粗针织羊毛帽衫 by Daily Weather X Nisei YamM 啦啦啦啦啦啦
+                </div>
+                <div class="info-price">¥<span id="price">599</span></div>
+            </div>
+            <div class="info-close" id="closeCard">x</div>
+        </div>
+        <div class="goods-choose">
+            <div class="choose-color">
+                <div class="choose-title">颜色</div>
+                <div class="choose-list" id="getColor">
+                    <div class="choose-item active">red</div>
+                    <div class="choose-item">green</div>
+                    <div class="choose-item">yellow</div>
+                    <div class="choose-item">blue</div>
+                </div>
+            </div>
+            <div class="choose-size">
+                <div class="choose-title">尺码</div>
+                <div class="choose-list" id="getSize">
+                    <div class="choose-item active">S</div>
+                    <div class="choose-item">M</div>
+                    <div class="choose-item">L</div>
+                </div>
+            </div>
+            <div class="choose-num">
+                <div class="choose-title">数量</div>
+                <div class="choose-num-container">
+                    <button type="button" class="choose-num-item minus-num" id="minusNum">-</button>
+                    <div class="choose-num-item current-num" id="currNum">1</div>
+                    <button type="button" class="choose-num-item plus-num" id="plusNum">+</button>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="goods-sure" id="goodsSure">确定</a>
+    </div>
+
+    <script src="./js/detail.js"></script>
+</body>
+</html>
